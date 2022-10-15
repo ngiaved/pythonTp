@@ -37,4 +37,14 @@
     
    } )
 
-}, 2000);
+}, 5000);
+
+fetch('https://www.dolarsi.com/api/api.php?type=valoresprincipales')
+   .then(response => response.json())
+   .then(function (json) {
+
+
+    console.log(json[0]["casa"]["compra"])
+    document.getElementById("usdV").innerHTML = "Dolar Venta: " + json[0]["casa"]["compra"];
+    
+   } )
