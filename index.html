@@ -1,58 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
     <title>Finanzas Personales e Inversión</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="icon" href="Imagenes\iconologopeq.ico">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
+
 <body>
-    <header>
-        <img src="Imagenes\logo_y_eslogan_horizontal-sin-fondo.png">
-        <nav>
-            <!-- hola -->
-            <ul>
-                <li>Quienes somos</li>
-                <li>Ahorros</li>
-                <li>Inversión</li>
-                <li>Cripto</li>
-                <li>Contacto</li>
-            </ul>
-        </nav>
+    <header>        
+        <div class="container"> 
+            <img src="Imagenes\logo_y_eslogan_horizontal-sin-fondo.png">          
+            <nav>
+                <a href="#quienessomos">Quienes somos</a>
+                <a href="#ahorros">Ahorros</a>
+                <a href="#inversion">Inversión</a>
+                <a href="#criptos">Criptomonedas</a>
+                <a href="#">Educación</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
     </header>
     <section id="quienessomos">
-        <article>
-            <h2>Quienes somos</h2>
-            <p>Somos un grupo de amigos que en 2020 se dio cuenta que es más que importante tener ordenadas las finanzas por si cae una pandemia.
-            Queremos compartir con todos el conocimiento que adquirimos desde entonces. Nos dimos cuenta que podemos mejorar un montón la calidad de vida ordenando las finanzas personales.
-            En general aprendemos poco sobre cómo podes manejar tu plata, pero estamos decididos a dar soporte a quien lo necesite para lograr sus metas. Arranquemos este viaje juntos!
-            </p>
-        </article>
-        <article>
-            <h2>Nuestro objetivo</h2>
-            <p>Hemos preparado distintas herramientas que usamos y que nos permiten mejorar nuestra calidad de vida. Brindamos servicio especializado para ayudarte a ordenar tus finanzas y para darte conocimiento sobre inversión. Contactanos por nuestros diferentes canales, si queres avanzar economicamente, nosotros te ayudamos a lograrlo!</p>
-        </article>
+        <div class="container">
+            <div class="imagen-qs"></div>
+            <div class="presentacion">
+                <h2>Quienes somos</h2>
+                <p>Somos un grupo de amigos que en 2020 se dio cuenta que es más que importante tener ordenadas las
+                    finanzas
+                    por si cae una pandemia.
+                    Queremos compartir con todos el conocimiento que adquirimos desde entonces. Nos dimos cuenta que
+                    podemos
+                    mejorar un montón la calidad de vida ordenando las finanzas personales.
+                    En general aprendemos poco sobre cómo podes manejar tu plata, pero estamos decididos a dar soporte a
+                    quien lo necesite para lograr sus metas. Arranquemos este viaje juntos!
+                </p>
+            </div>
+            <div class="objetivo">
+                <h2>Nuestro Objetivo</h2>
+                <p>Hemos preparado distintas herramientas que usamos y que nos permiten mejorar nuestra calidad de vida.
+                    Brindamos servicio especializado para ayudarte a ordenar tus finanzas y para darte conocimiento
+                    sobre
+                    inversión. Contactanos por nuestros diferentes canales, si queres avanzar economicamente, nosotros
+                    te
+                    ayudamos a lograrlo!</p>
+            </div>
+        </div>
     </section>
-    <section>
-        <h1>Ahorros</h1>
-        En esta sección te contamos que existen muchas y variadas formas de ahorrar, aunque lo primero es saber manejar tus gastos para luego poder avanzar a destinar una parte de tus ingresos para el ahorro. A continuación te dejamos un excel con info de ejemplo que te puede ayudar a establecer tus gastos. Es importante que la información que vuelques en el excel sea lo más precisa posible.
-        Debes observar si las decisines de compra que has tomado son correctas, y si te permiten lograr tus objetivos. 
-        <br>
-        <a href="Planilla de Gastos y Ahorro.xlsx" download="Planilla de Gastos y Ahorro.xlsx">Descargar Planilla de Gastos y Ahorro</a>
-        <br>
-        <p>Mira el siguiente tutorial si tenes dudas para usar la planilla!</p>
-        <video src="Videos\Tutorial Planilla de Gastos y Ahorro.mp4" width="320" height="240" controls>Tutorial para manejar la planilla de Gastos y Ahorro!</video>
 
-        <p>El mejor tip que sale de esta sección es tener pensado un porcentaje de tus ingresos para destinarlo al ahorro. Si se puede!</p>
+    <section id="ahorros">
+        <h1>Ahorros</h1>
+        <p>En esta sección te contamos que existen muchas y variadas formas de ahorrar, aunque lo primero es saber
+            manejar
+            tus gastos para luego poder avanzar a destinar una parte de tus ingresos para el ahorro. A continuación te
+            dejamos un excel con info de ejemplo que te puede ayudar a establecer tus gastos. Es importante que la
+            información que vuelques en el excel sea lo más precisa posible.
+            Debes observar si las decisines de compra que has tomado son correctas, y si te permiten lograr tus
+            objetivos.</p> <br>
+        <a href="Planilla de Gastos y Ahorro.xlsx" download="Planilla de Gastos y Ahorro.xlsx">Descargar Planilla de
+            Gastos y Ahorro</a>        
+        <div class="video">
+            <p>Mira el siguiente tutorial si tenes dudas para usar la planilla!</p>
+            <video src="Videos\Tutorial Planilla de Gastos y Ahorro.mp4" width="320" height="240" controls>Tutorial para
+                manejar la planilla de Gastos y Ahorro!</video>
+        </div>
+        <p>El mejor tip que sale de esta sección es tener pensado un porcentaje de tus ingresos para destinarlo al
+            ahorro. Si se puede!</p>
     </section>
-    <section>
+
+    <section id="inversion">
         <h2>Inversión</h2>
-            <p>Inicialmente tenes que saber que no es dificil invertir y que invertir significa que vas a lograr hacer ganancias generadas desde tus ahorros. <br>
-            Te recomendamos las siguientes herramientas para invertir y te dejamos videos para que entiendas un poco más sobre cada una. 
-            </p>
+        <p>Inicialmente tenes que saber que no es dificil invertir y que invertir significa que vas a lograr hacer
+            ganancias generadas desde tus ahorros. <br>
+            Te recomendamos las siguientes herramientas para invertir y te dejamos videos para que entiendas un poco más
+            sobre cada una.
+        </p>
         <article>
             <h3>Plazo Fijo</h3>
             <video src=""></video>
@@ -65,14 +94,15 @@
             <h3>Comprar modeda extranjera</h3>
             <video src=""></video>
         </article>
+    </section>
 
-    </section>
-    <section>
+    <section id="criptos">
         <h2>Criptomonedas</h2>
-        <p>Las Criptomonedas merecen un capitulo aparte para nosotros. Por lo novedosas que son y por el potencial que tienen. Existen diversas fuentes de información te dejamos info para que comiences a conocerlas.</p>
-        
+        <p>Las Criptomonedas merecen un capitulo aparte para nosotros. Por lo novedosas que son y por el potencial que
+            tienen. Existen diversas fuentes de información te dejamos info para que comiences a conocerlas.</p>
     </section>
-    <section id="Contacto">
+
+    <section id="contacto">
         <h1>Contactanos por cualquier duda!</h1>
         <form action="https://formspree.io/f/xvoyqryw" method="POST">
             <label>
@@ -87,23 +117,31 @@
                 Dejanos tu mensaje:
                 <textarea name="mensaje"></textarea>
             </label>
-            
+
             <button type="submit">Enviar consulta</button>
-            </form>
-            <br>
+        </form>
+        <br>
 
-            <h1>Redes</h1>
-            <p>Seguinos en nuestras redes sociales para estar al tanto de lo que se viene.</p>
-            <br>
-            <h1>Visitanos!</h1>
-            <p>Te esperamos en nuestras oficinas para conocernos</p>
+        <h1>Redes</h1>
+        <p>Seguinos en nuestras redes sociales para estar al tanto de lo que se viene.</p>
+        <br>
+        <h1>Visitanos!</h1>
+        <p>Te esperamos en nuestras oficinas para conocernos</p>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.1199406417527!2d-68.78914854941512!3d-32.89113359096098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0eea8158bbd1%3A0x2916364b0208b13a!2sGutemberg%203973%2C%20M5521EPF%20Belgrano%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1665454442205!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.1199406417527!2d-68.78914854941512!3d-32.89113359096098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0eea8158bbd1%3A0x2916364b0208b13a!2sGutemberg%203973%2C%20M5521EPF%20Belgrano%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1665454442205!5m2!1ses!2sar"
+            width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-          
+
     </section>
+
     <footer>
-        Todos los derechos reservados. Finanzas personales e inversión.
+        <div class="container">
+            <p>&copy; Todos los derechos reservados. FPI.</p>
+        </div>
     </footer>
+
 </body>
+
 </html>

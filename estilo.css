@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+                                    /* HEADER */
+
+header img {
+    height: 18%;
+    width: 18%;
+    padding: 10px 15px;
+    object-fit: contain;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    font-size: 19px;       
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+header a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#quienessomos{
+    padding: 150px 0px;
+}
+
+#quienessomos .container {
+    text-align: center;
+    padding: 40px 12px;
+    margin: 0;
+}
+
+#quienessomos h2 {
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
+    padding: 0;
+}
+
+footer{
+    background-color: rgb(228, 222, 222);
+}
+
+footer p{
+    margin: 0;
+    padding: 10px;
+    color: rgb(51, 50, 50);
+}
+
+footer .container{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (min-width: 720px) {
+
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {            
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 0px;
+        padding-right: 0px;
+    }
+
+    header nav a {
+        padding-right: 12px;
+    }
+
+    #quienessomos .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    #quienessomos .presentacion {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #quienessomos .objetivo {
+        width: 50%;
+        max-width: 600px;
+        text-align: left;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
