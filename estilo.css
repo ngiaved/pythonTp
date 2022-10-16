@@ -8,7 +8,7 @@ body {
     margin: auto;
 }
 
-                                    /* HEADER */
+    /* HEADER */
 
 header img {
     height: 15%;
@@ -36,6 +36,7 @@ header a {
     font-weight: bold;
 }
 
+    /* ESTILO PRESENTACION */
 #quienessomos{
     padding: 100px 0px;
 }
@@ -47,6 +48,21 @@ header a {
 }
 
 #quienessomos h2 {
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
+    padding: 0;
+}
+
+/* ESTILO AHORROS */
+
+#ahorros .container {
+    text-align: center;
+    padding: 40px 12px;
+    margin: 0;
+}
+
+#ahorros h2{
     margin: 0;
     font-size: 40px;
     text-align: center;
@@ -113,6 +129,21 @@ footer .container{
         width: 50%;
         max-width: 600px;
         text-align: left;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #ahorros .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    #ahorros .tiposdeahorros {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
         padding: 0 20px;
         display: flex;
         flex-direction: column;
