@@ -108,17 +108,36 @@
         </p>
         <article>
             <h3>Plazo Fijo</h3>
-            <video src=""></video>
+            <img src="Imagenes\plazo-fijo.jpg" alt="Plazo fijo" width="25%" height="25%">
+            
+            <p>
+                El plazo fijo funciona como un depósito de dinero a un plazo determinado. Transcurrido ese plazo, el banco devuelve al inversor el monto invertido más los intereses ganados.
+
+La tasa de interés dependerá del banco y del plazo depositado, pero en nuestro país el BCRA establece el una tasa mínima de referencia que actualmente es del 40% nominal anual.
+
+Se pueden constituir tanto en pesos como en dólares.
+El monto mínimo de inversión varia de acuerdo al banco, pero se puede participar con montos mínimos.
+El plazo mínimo de inversión es de 30 días.
+Basicamente, guardas tu plata en el banco, destinandola como ahorro en plazo fijo y elegis un tiempo para ese ahorro, luego el banco te paga intereses.
+            </p>
+            <br>
+            <p>A continuación, te dejamos una calculadora para que puedas simular los intereses que ganas concretando un plazo fijo. Te recomendamos que hagas varias pruebas de ejemplo.</p>
+            
+            <a href="https://www.tuplazofijo.com.ar/calculadoras/">Calculadora Plazo Fijo</a>
+            
         </article>
         <article>
-            <h3>Comprar acciones o bonos</h3>
-            <video src=""></video>
+            <h3>Acciones o bonos</h3>
+            <img src="Imagenes\acciones-bonos.jpg" alt="Acciones y bonos" width="25%" height="50%">
+            
         </article>
         <article>
             <h3>Comprar modeda extranjera</h3>
-            <video src=""></video>
+            <img src="Imagenes\dolar.jpg" alt="Dolar" width="25%" height="25%">
+           
         </article>
     </section>
+    
 
     <section id="criptos">
         <h2>Criptomonedas</h2>
@@ -128,23 +147,86 @@
 
     <section id="contacto">
         <h1>Contactanos por cualquier duda!</h1>
-        <form action="https://formspree.io/f/xvoyqryw" method="POST">
-            <label>
-                Nombre:
-                <input type="text" name="Nombre">
-            </label>
-            <label>
-                Email:
-                <input type="email" name="email">
-            </label>
-            <label>
-                Dejanos tu mensaje:
-                <textarea name="mensaje"></textarea>
-            </label>
-
-            <button type="submit">Enviar consulta</button>
+        <form name="validarForm" action="https://formspree.io/f/xvoyqryw" method="POST">
+            <table>
+                <tr>
+                    <td>Nombre:</td>
+                    <td><input type="text" name="nombre" size="30" maxlength="100"></td>
+                </tr>
+                <tr>
+                    <td>Edad:</td>
+                    <td><input type="text" name = "edad" size="3" maxlength="2"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Mensaje:</td>
+                    <td><textarea name="mensaje"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Tipo de consulta:</td>
+                    <td>
+                        <select name="tipoConsulta">
+                            <option value="nada">Elegir</option>
+                            <option value="Comercial">Contacto Comercial</option>
+                            <option value="Sugerencia para el blog">Sugerencia para el blog</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" id="botonForm" value="Enviar" onclick="validarEnviar()">
+                    </td>
+                </tr>
+            </table>
         </form>
         <br>
+        <script>
+           
+            function validarEnviar() {
+                
+            
+                //Función para validar el envío de datos del formulario
+                if (document.validarForm.nombre.value.length<3) {
+                    alert("Escriba su nombre completo por favor")
+                    document.validarForm.nombre.focus()
+                    return 0;
+                }
+                edad = document.validarForm.edad.value
+                edad = validarEntero(edad)
+                document.validarForm.edad.value = edad
+                if (edad=="") {
+                    alert("Introducir edad como número entero")
+                    document.validarForm.edad.focus()
+                    return 0;
+                }
+                if (document.validarForm.tipoConsulta.selectedIndex==0) {
+                    alert("Debe seleccionar su tipo de consulta por favor")
+                    document.validarForm.tipoConsulta.focus()
+                    return 0;
+                }
+                if (document.validarForm.mensaje.value=="") {
+                    alert("Ingrese su consulta por favor")
+                    document.validarForm.mensaje.focus()
+                    return 0;
+                }
+                //se envía el formulario
+                alert("Muchas gracias por enviar su consulta")
+                document.validarForm.submit();
+            }  
+            function validarEntero(valor) {
+                valor = parseInt(valor)
+                if (isNaN(valor)) {
+                    return ""
+                }else{
+                    return valor
+                }
+            }
+                
+        </script>
+
 
         <h1>Redes</h1>
         <p>Seguinos en nuestras redes sociales para estar al tanto de lo que se viene.</p>
