@@ -10,6 +10,10 @@ body {
 
     /* HEADER */
 
+header{
+    background-color: rgb(235, 239, 241);
+}
+
 header img {
     height: 15%;
     width: 15%;
@@ -32,13 +36,14 @@ header nav {
 }
 
 header a {
+    color: rgb(67, 142, 228);
     text-decoration: none;
     font-weight: bold;
 }
 
     /* ESTILO PRESENTACION */
 #quienessomos{
-    padding: 100px 0px;
+    padding: 70px 0px;
 }
 
 #quienessomos .container {
@@ -56,6 +61,10 @@ header a {
 
 /* ESTILO AHORROS */
 
+#ahorros{
+    padding: 50px 0px;
+}
+
 #ahorros .container {
     text-align: center;
     padding: 40px 12px;
@@ -70,7 +79,7 @@ header a {
 }
 
 footer{
-    background-color: rgb(228, 222, 222);
+    background-color: rgb(235, 239, 241);
 }
 
 footer p{
@@ -144,6 +153,16 @@ footer .container{
         width: 50%;
         max-width: 600px;
         text-align: initial;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #ahorros .video-ahorros {
+        width: 50%;
+        max-width: 600px;
+        text-align: left;
         padding: 0 20px;
         display: flex;
         flex-direction: column;
