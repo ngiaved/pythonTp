@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1800px;
     margin: auto;
 }
 
@@ -116,7 +116,7 @@ footer .container{
     }
 
     header nav a {
-        padding-right: 12px;
+        padding-right: 10px;
     }
 
     #quienessomos .container {
