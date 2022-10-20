@@ -8,21 +8,21 @@ body {
     margin: auto;
 }
 
-h2{
+h2 {
     color: rgb(51, 118, 196);
 }
 
-h3{
+h3 {
     color: rgb(67, 142, 228);
 }
 
-h4{
+h4 {
     color: rgb(11, 119, 243);
 }
 
-    /* HEADER */
+/* HEADER */
 
-header{
+header {
     background-color: rgb(235, 239, 241);
 }
 
@@ -40,7 +40,7 @@ header .container {
 }
 
 header nav {
-    font-size: 19px;       
+    font-size: 19px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,8 +53,8 @@ header a {
     font-weight: bold;
 }
 
-    /* ESTILO PRESENTACION */
-#quienessomos{
+/* ESTILO PRESENTACION */
+#quienessomos {
     padding: 70px 0px;
 }
 
@@ -73,7 +73,7 @@ header a {
 
 /* ESTILO AHORROS */
 
-#ahorros{
+#ahorros {
     padding: 50px 0px;
 }
 
@@ -83,7 +83,7 @@ header a {
     margin: 0;
 }
 
-#ahorros h2{
+#ahorros h2 {
     margin: 0;
     font-size: 40px;
     text-align: center;
@@ -94,38 +94,52 @@ header a {
 
 /* INVERSION */
 
-#inversion{
+#inversion {
     padding: 50px 0px;
 }
 
-#inversion .container{
+#inversion .container {
     text-align: center;
     padding: 40px 12px;
     margin: 0;
 }
 
-#inversion h2{
+#inversion h2 {
     margin: 0;
     font-size: 40px;
     text-align: center;
     padding: 0;
 }
 
-#inversion .plazofijo{
+#inversion .plazofijo img{
+    width: 300px;
+    height: 250px;
+    float: left;
+}
+
+#inversiones .plazofijo {
+    display: inline-block;
+    padding: ;
     
 }
 
-footer{
+.plazofijo p{
+    font-size: 15px;
+    text-align: left;
+    padding-left: 25%;
+}
+
+footer {
     background-color: rgb(235, 239, 241);
 }
 
-footer p{
+footer p {
     margin: 0;
     padding: 10px;
     color: rgb(51, 50, 50);
 }
 
-footer .container{
+footer .container {
     height: 40px;
     display: flex;
     justify-content: center;
@@ -145,7 +159,7 @@ footer .container{
         justify-content: space-between;
     }
 
-    header nav {            
+    header nav {
         display: flex;
         flex-direction: row;
         padding-bottom: 0px;
@@ -206,7 +220,7 @@ footer .container{
         justify-content: center;
     }
 
-    .video-ahorros video{
+    .video-ahorros video {
         width: 480px;
         height: 200px;
     }
