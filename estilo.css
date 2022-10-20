@@ -8,6 +8,18 @@ body {
     margin: auto;
 }
 
+h2{
+    color: rgb(51, 118, 196);
+}
+
+h3{
+    color: rgb(67, 142, 228);
+}
+
+h4{
+    color: rgb(11, 119, 243);
+}
+
     /* HEADER */
 
 header{
@@ -36,7 +48,7 @@ header nav {
 }
 
 header a {
-    color: rgb(67, 142, 228);
+    color: rgb(39, 100, 170);
     text-decoration: none;
     font-weight: bold;
 }
@@ -76,6 +88,31 @@ header a {
     font-size: 40px;
     text-align: center;
     padding: 0;
+}
+
+
+
+/* INVERSION */
+
+#inversion{
+    padding: 50px 0px;
+}
+
+#inversion .container{
+    text-align: center;
+    padding: 40px 12px;
+    margin: 0;
+}
+
+#inversion h2{
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
+    padding: 0;
+}
+
+#inversion .plazofijo{
+    
 }
 
 footer{
@@ -168,5 +205,12 @@ footer .container{
         flex-direction: column;
         justify-content: center;
     }
+
+    .video-ahorros video{
+        width: 480px;
+        height: 200px;
+    }
+
+
 
 }
