@@ -95,10 +95,6 @@ header a {
 /* INVERSION */
 
 #inversion {
-    padding: 50px 0px;
-}
-
-#inversion .container {
     text-align: center;
     padding: 40px 12px;
     margin: 0;
@@ -111,23 +107,11 @@ header a {
     padding: 0;
 }
 
-#inversion .plazofijo img{
-    width: 300px;
-    height: 250px;
-    float: left;
+#inversion p{
+    font-size: 18px;    
+    padding: 0;
 }
 
-#inversiones .plazofijo {
-    display: inline-block;
-    padding: ;
-    
-}
-
-.plazofijo p{
-    font-size: 15px;
-    text-align: left;
-    padding-left: 25%;
-}
 
 footer {
     background-color: rgb(235, 239, 241);
@@ -200,6 +184,10 @@ footer .container {
         justify-content: center;
     }
 
+    #ahorros a{
+        text-decoration: none;
+    }
+
     #ahorros .tiposdeahorros {
         width: 50%;
         max-width: 600px;
@@ -225,6 +213,64 @@ footer .container {
         height: 200px;
     }
 
+    #inversion{
+        text-align: center;
+               
+    }
 
+    #inversion a{
+        text-decoration: none;
+    }
+
+    #inversion .container{
+        display: flex;
+        justify-content: center;
+        padding: 45px 0;
+    }
+
+    #inversion .plazofijo{
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #inversion .imagen-pf{
+        background-image: url(Imagenes/plazo-fijo.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 550px;
+        border-radius: 7%;
+        padding: 60px 0;
+    }
+
+    #inversion .container-2{
+        display: flex;
+        justify-content: center;
+    }
+
+    #inversion .acc-bonos{
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #inversion .imagen-bonos{
+        background-image: url(Imagenes/acciones-bonos.jpg);        
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 550px;
+        border-radius: 7%;
+        padding: 60px 0;
+    }
 
 }
