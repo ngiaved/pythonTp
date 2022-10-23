@@ -266,7 +266,7 @@ footer .container {
     #inversion .imagen-bonos{
         background-image: url(Imagenes/acciones-bonos.jpg);        
         background-size: cover;
-        background-position: center center;
+        background-position: center;
         height: 300px;
         width: 550px;
         border-radius: 7%;
