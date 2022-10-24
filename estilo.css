@@ -271,6 +271,48 @@ footer .container {
         width: 550px;
         border-radius: 7%;
         padding: 60px 0;
+    }    
+
+    #inversion .bonos{
+        width: 50%;
+        max-width: 500px;
+        text-align: center;        
+             
+        
+    }
+
+    #inversion .acciones{
+        width: 50%;        
+        max-width: 500px;
+        text-align: center;
+        padding: 30px 20px;  
+              
+    }
+
+    #inversion .container-3{
+        display: flex;
+        justify-content: center;
+        padding: 45px 0;
+    }
+
+    #inversion .moneda-ext{
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #inversion .imagen-mon-ext{
+        background-image: url(Imagenes/dolar.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 550px;
+        border-radius: 7%;
+        padding: 60px 0;
     }
 
 }
