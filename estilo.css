@@ -8,11 +8,14 @@ body {
     margin: auto;
 }
 
+
 h2 {
+    font-size: 40px;
     color: rgb(51, 118, 196);
 }
 
 h3 {
+    font-size: 30px;    
     color: rgb(67, 142, 228);
 }
 
@@ -66,7 +69,7 @@ header a {
 
 #quienessomos h2 {
     margin: 0;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     padding: 0;
 }
@@ -83,9 +86,9 @@ header a {
     margin: 0;
 }
 
-#ahorros h2 {
+#ahorros h2{
     margin: 0;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     padding: 0;
 }
@@ -102,13 +105,13 @@ header a {
 
 #inversion h2 {
     margin: 0;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     padding: 0;
 }
 
 #inversion p{
-    font-size: 18px;    
+    font-size: 15px;    
     padding: 0;
 }
 
@@ -154,6 +157,7 @@ footer .container {
         padding-right: 10px;
     }
 
+    
     #quienessomos .container {
         display: flex;
         justify-content: center;
@@ -225,14 +229,14 @@ footer .container {
     #inversion .container{
         display: flex;
         justify-content: center;
-        padding: 45px 0;
+        padding: 55px 0;
     }
 
     #inversion .plazofijo{
         width: 50%;
         max-width: 600px;
         text-align: center;
-        padding: 0 20px;
+        padding: 0 20px ;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -271,22 +275,22 @@ footer .container {
         width: 550px;
         border-radius: 7%;
         padding: 60px 0;
-    }    
+    } 
+    
+    #inversion .acc-o-bonos{
+        padding: 45px;
+    }
+
+    #inversion h4{
+        text-align: center;
+    }
 
     #inversion .bonos{
-        width: 50%;
-        max-width: 500px;
-        text-align: center;        
-             
-        
+        text-align: left;       
     }
 
     #inversion .acciones{
-        width: 50%;        
-        max-width: 500px;
-        text-align: center;
-        padding: 30px 20px;  
-              
+       text-align: left;
     }
 
     #inversion .container-3{
