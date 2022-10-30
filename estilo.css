@@ -26,7 +26,17 @@ h4 {
 /* HEADER */
 
 header {
-    background-color: rgb(235, 239, 241);    
+    background-color: rgb(235, 239, 241);
+    animation-name: cambiarColor;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+ }
+
+ @keyframes cambiarColor {
+     0% {background: #edeff3} 
+     50% {background: #bfcff0}
+     100% {background: #d8dde4}
 }
 
 header img {
@@ -100,6 +110,10 @@ header a {
     text-align: center;
     padding: 40px 12px;
     margin: 0;
+}
+
+#inversion a:visited {
+    color: rgb(39, 100, 170);
 }
 
 #inversion h2 {
@@ -208,6 +222,10 @@ header a {
 
 #criptos h2{
     font-size: 50px;
+}
+
+#criptos a:visited {
+    color: rgb(39, 100, 170);
 }
 
 /* FOOTER */
@@ -485,7 +503,8 @@ footer .container {
         margin: 30px;
     }
 
-    #conacto h3, p{
+    
+    #contacto h3, p{
         margin: 0;
     }
 
@@ -520,4 +539,7 @@ footer .container {
     #contacto h3{
         margin: 5px;
     }    
+    .direccion p{
+        color: #000000;
+    }
 }
