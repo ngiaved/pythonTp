@@ -4,15 +4,34 @@ body {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1800px;
     margin: auto;
 }
 
-                                    /* HEADER */
+
+h2 {
+    font-size: 40px;
+    color: rgb(51, 118, 196);
+}
+
+h3 {
+    font-size: 30px;    
+    color: rgb(67, 142, 228);
+}
+
+h4 {
+    color: rgb(11, 119, 243);
+}
+
+/* HEADER */
+
+header {
+    background-color: rgb(235, 239, 241);    
+}
 
 header img {
-    height: 18%;
-    width: 18%;
+    height: 15%;
+    width: 15%;
     padding: 10px 15px;
     object-fit: contain;
 }
@@ -24,7 +43,7 @@ header .container {
 }
 
 header nav {
-    font-size: 19px;       
+    font-size: 19px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,12 +51,14 @@ header nav {
 }
 
 header a {
+    color: rgb(39, 100, 170);
     text-decoration: none;
     font-weight: bold;
 }
 
-#quienessomos{
-    padding: 150px 0px;
+/* ESTILO PRESENTACION */
+#quienessomos {
+    padding: 70px 0px;    
 }
 
 #quienessomos .container {
@@ -48,22 +69,161 @@ header a {
 
 #quienessomos h2 {
     margin: 0;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     padding: 0;
 }
 
-footer{
-    background-color: rgb(228, 222, 222);
+/* ESTILO AHORROS */
+
+#ahorros {
+    margin-top: 50px;
+    padding: 20px 0px;
 }
 
-footer p{
+#ahorros .container {
+    text-align: center;
+    padding: 20px 12px;
+    margin: 0;
+}
+
+#ahorros h2{
+    margin: 0;
+    font-size: 50px;
+    text-align: center;
+    padding: 0;
+}
+
+/* INVERSION */
+
+#inversion {
+    text-align: center;
+    padding: 40px 12px;
+    margin: 0;
+}
+
+#inversion h2 {
+    margin: 0;
+    font-size: 50px;
+    text-align: center;
+    padding: 0;
+}
+
+#inversion p{
+    font-size: 15px;    
+    padding: 0;
+}
+
+/* CONTACTO */
+
+#contacto h2{
+    text-align: center;
+}
+
+#contacto {
+    margin: 0;
+    color: rgb(11, 119, 243);     
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.9) ),
+    url(/Imagenes/FINANZAS.jpg);   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#contacto .formulario{
+    text-align: center;
+}
+
+#contacto form{   
+    width: 100%;    
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+#contacto input, textarea{
+    text-align: center; 
+    width: 50%;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+#contacto select{
+    margin-bottom: 30px;
+}
+
+#contacto .redes-sociales{
+    text-align: center;   
+}
+
+#contacto i{
+    font-size: 60px;
+    padding: 5% 10%;
+    color: rgb(36, 177, 233);   
+    border-radius: 50%;
+}
+
+#contacto .direccion{
+    padding: 40px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ESTILO BOTON */
+
+#botonForm{   
+    cursor: pointer; 
+    background-color: rgb(0, 0, 0);
+    border: none;
+    max-width: 190px;
+    letter-spacing: 4px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(241, 232, 232);
+    font-size: 25px;
+    font-weight: bold;
+    overflow: hidden;
+    transition: 0.3s; 
+    border-radius: 28px;
+}
+
+#botonForm:hover {
+    letter-spacing: 4px;
+    background-color: rgb(19, 182, 231);
+    box-shadow: 0 0 10px rgb(19, 182, 231), 0 0 20px rgb(19, 182, 231), 0 0 30px rgb(19, 182, 231);
+    border: none;
+    color: rgb(10, 10, 10);
+    font-size: 25px;
+    overflow: hidden;
+    transition: 0.3s;    
+}
+
+/* CRIPTOMONEDAS */
+
+#criptos{
+    text-align: center;
+    padding: 40px 12px;
+    margin: 0;
+}
+
+#criptos h2{
+    font-size: 50px;
+}
+
+/* FOOTER */
+
+
+footer {
+    background-color: rgb(235, 239, 241);
+}
+
+footer p {
     margin: 0;
     padding: 10px;
     color: rgb(51, 50, 50);
 }
 
-footer .container{
+footer .container {
     height: 40px;
     display: flex;
     justify-content: center;
@@ -83,7 +243,7 @@ footer .container{
         justify-content: space-between;
     }
 
-    header nav {            
+    header nav {
         display: flex;
         flex-direction: row;
         padding-bottom: 0px;
@@ -91,15 +251,17 @@ footer .container{
     }
 
     header nav a {
-        padding-right: 12px;
+        padding-right: 10px;
     }
 
+   
     #quienessomos .container {
         display: flex;
         justify-content: center;
     }
 
     #quienessomos .presentacion {
+        margin-top: 60px;
         width: 50%;
         max-width: 600px;
         text-align: initial;
@@ -119,4 +281,243 @@ footer .container{
         justify-content: center;
     }
 
+    #ahorros h2{
+        margin-top: 15px;
+        padding-bottom: 50px;
+    }
+
+    #ahorros .container {        
+        display: flex;
+        justify-content: center;
+    }
+
+    #ahorros h2{
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    #ahorros a{
+        padding-top: 15px;
+        text-decoration: none;
+    }
+
+    #ahorros .tiposdeahorros {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #ahorros .video-ahorros {
+        width: 50%;
+        max-width: 600px;       
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .video-ahorros video{
+        width: 40vw;
+        height: 35vh;
+    }
+
+    #inversion{
+        margin: 0;
+        text-align: center;               
+    }
+
+    #inversion h2{
+        font-size: 70px;
+        text-align: center;
+        padding: 25px;  
+    }
+
+    #inversion h3{
+        text-align: center;
+    }
+
+    #inversion a{
+        text-decoration: none;
+    }
+
+    #inversion .container{
+        display: flex;
+        justify-content: center;
+        padding: 55px 0;
+    }
+
+    #inversion .plazofijo{
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+        padding: 0 20px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #inversion .imagen-pf{
+        margin-top: 80px;
+        background-image: url(Imagenes/plazo-fijo.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 550px;
+        border-radius: 7%;
+        padding: 60px 0;
+    }
+
+    #inversion .container-2{
+        display: flex;
+        justify-content: center;
+    }
+
+    #inversion .acc-bonos{
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #inversion .imagen-bonos{
+        margin-top: 80px;
+        background-image: url(Imagenes/acciones-bonos.jpg);        
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        width: 550px;
+        border-radius: 7%;
+        padding: 60px 0;
+    } 
+    
+    #inversion .acc-o-bonos{
+        padding: 45px 0;
+    }
+
+    #inversion h4{
+        text-align: center;
+    }
+
+    #inversion .bonos{
+        text-align: left;           
+    }
+
+    #inversion .acciones{
+       text-align: left;
+    }
+
+    #inversion .container-3{
+        display: flex;
+        justify-content: center;
+        padding: 45px 0;
+    }
+
+    #inversion h3{
+        margin: 0;
+    }
+
+    #inversion .moneda-ext{
+        margin: 0;
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #inversion .imagen-mon-ext{
+        margin-top: 60px;
+        background-image: url(Imagenes/dolar.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 550px;
+        border-radius: 7%;
+        padding: 0;
+    }
+
+    #criptos{
+        margin-bottom: 50px;
+        padding-top: 50px;
+        text-decoration: none;
+    }
+
+    #criptos h2{
+        margin: 10px;
+        margin-bottom: 35px;
+        font-size: 60px;
+        text-align: center;
+    }
+    
+    #criptos h3{
+        text-align: center;
+    }
+
+    #criptos a{
+        text-decoration: none;
+    }
+
+    #criptos p{
+        padding-left: 15px;       
+    }
+
+    #contacto{
+        margin-top: 20px;
+        padding-top: 50px;
+    }
+
+   
+
+    #contacto div{       
+        display: inline-block;
+    }
+
+    #contacto h2{
+        margin: 30px;
+    }
+
+    #conacto h3, p{
+        margin: 0;
+    }
+
+    #contacto .formulario{
+        margin-left: 15px;
+        float: left;
+        text-align: center;
+        width: 45%;
+    }
+
+    #contacto textarea{
+        text-align: left;
+        min-width: 290px;
+        max-width: 290px;
+        min-height: 150px;
+        max-height: 150px;
+    }
+
+    #contacto .redes-sociales{
+        margin-right: 15px;
+        float: right;
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+       width: 45%;
+    }
+
+    #contacto .direccion{
+        clear: both;       
+    }
+
+    #contacto h3{
+        margin: 5px;
+    }    
 }

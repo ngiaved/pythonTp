@@ -7,36 +7,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/4a463d1026.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
     <title>Finanzas Personales e Inversión</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="icon" href="Imagenes\iconologopeq.ico">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script type = "text/javascript" src="js/scritps.js"></script>
-    <script type = "text/javascript">
+    <script type="text/javascript" src="js/scritps.js"></script>
+    <script type="text/javascript">
 
-    
-    
- 
-    
+
+
+
+
     //console.log(JSON.parse(getCotizacion)[0].casa)
-    
+
 
 
     </script>
 </head>
 
 <body>
-    <header>        
-        <div class="container"> 
-            <img src="Imagenes\logo_y_eslogan_horizontal-sin-fondo.png"> 
-            <div id="usdV"></div>         
+    <header>
+        <div class="container">
+            <img src="Imagenes\logo_y_eslogan_horizontal-sin-fondo.png">
+            <div id="navegacion"></div>
             <nav>
-                <a href="#quienessomos">Quienes somos</a>
+                <a href="#quienessomos">Quienes Somos</a>
                 <a href="#ahorros">Ahorros</a>
                 <a href="#inversion">Inversión</a>
                 <a href="#criptos">Criptomonedas</a>
-                <a href="#">Educación</a>
                 <a href="#contacto">Contacto</a>
             </nav>
         </div>
@@ -69,83 +69,256 @@
     </section>
 
     <section id="ahorros">
-        <h1>Ahorros</h1>
-        <p>En esta sección te contamos que existen muchas y variadas formas de ahorrar, aunque lo primero es saber
-            manejar
-            tus gastos para luego poder avanzar a destinar una parte de tus ingresos para el ahorro. A continuación te
-            dejamos un excel con info de ejemplo que te puede ayudar a establecer tus gastos. Es importante que la
-            información que vuelques en el excel sea lo más precisa posible.
-            Debes observar si las decisines de compra que has tomado son correctas, y si te permiten lograr tus
-            objetivos.</p> <br>
-        <a href="Planilla de Gastos y Ahorro.xlsx" download="Planilla de Gastos y Ahorro.xlsx">Descargar Planilla de
-            Gastos y Ahorro</a>        
-        <div class="video">
-            <p>Mira el siguiente tutorial si tenes dudas para usar la planilla!</p>
-            <video src="Videos\Tutorial Planilla de Gastos y Ahorro.mp4" width="320" height="240" controls>Tutorial para
-                manejar la planilla de Gastos y Ahorro!</video>
+        <h2>Ahorros</h2>
+        <div class="container">
+            <div class="tiposdeahorros">                
+                <p>En esta sección te contamos que existen muchas y variadas formas de ahorrar, aunque lo primero es
+                    saber
+                    manejar
+                    tus gastos para luego poder avanzar a destinar una parte de tus ingresos para el ahorro. A
+                    continuación
+                    te
+                    dejamos un excel con info de ejemplo que te puede ayudar a establecer tus gastos. Es importante que
+                    la
+                    información que vuelques en el excel sea lo más precisa posible.
+                    Debes observar si las decisiones de compra que has tomado son correctas, y si te permiten lograr tus
+                    objetivos.</p>
+                <a href="Planilla de Gastos y Ahorro.xlsx" download="Planilla de Gastos y Ahorro.xlsx">
+                    <p>Descargar Planilla de Gastos y Ahorro</p>
+                </a>
+            </div>
+
+            <div class="video-ahorros">
+                <p>Mira el siguiente tutorial si tenes dudas para usar la planilla!</p>
+                <video src="Videos\Tutorial Planilla de Gastos y Ahorro.mp4" width="300vw" height="180vh"
+                    controls>Tutorial
+                    para manejar la planilla de Gastos y Ahorro!</video>
+                <p>El mejor tip que sale de esta sección es tener pensado un porcentaje de tus ingresos para destinarlo
+                    al ahorro. Si se puede!</p>
+            </div>
+
         </div>
-        <p>El mejor tip que sale de esta sección es tener pensado un porcentaje de tus ingresos para destinarlo al
-            ahorro. Si se puede!</p>
     </section>
 
     <section id="inversion">
         <h2>Inversión</h2>
-        <p>Inicialmente tenes que saber que no es dificil invertir y que invertir significa que vas a lograr hacer
+        <p>Inicialmente tenes que saber que no es dificil invertir y que invertir significa que vas a lograr
             ganancias generadas desde tus ahorros. <br>
-            Te recomendamos las siguientes herramientas para invertir y te dejamos videos para que entiendas un poco más
-            sobre cada una.
+            Te recomendamos las siguientes herramientas para invertir, contamos con charlas de asesoría para
+            brindarte info más detallada
+            sobre cada una. Escribinos desde la sección de contacto!
         </p>
-        <article>
-            <h3>Plazo Fijo</h3>
-            <video src=""></video>
-        </article>
-        <article>
-            <h3>Comprar acciones o bonos</h3>
-            <video src=""></video>
-        </article>
-        <article>
-            <h3>Comprar modeda extranjera</h3>
-            <video src=""></video>
-        </article>
+
+        <div class="container">
+            <div class="imagen-pf"></div>
+            <div class="plazofijo">
+                <h3>Plazo Fijo</h3>
+                <p> El plazo fijo funciona como un depósito de dinero a un plazo determinado. Transcurrido ese plazo, el
+                    banco devuelve al inversor el monto invertido más los intereses ganados.
+                    La tasa de interés dependerá del banco y del plazo depositado, pero en nuestro país el BCRA
+                    establece el una tasa mínima de referencia que actualmente es del 40% nominal anual.                    
+                    El monto mínimo de inversión varia de acuerdo al banco, pero se puede participar con montos mínimos.
+                    El plazo mínimo de inversión es de 30 días.
+                    Basicamente, guardas tu plata en el banco, destinandola como ahorro en plazo fijo y elegis un tiempo
+                    para ese ahorro, luego el banco te paga intereses. <br>
+                    A continuación, te dejamos una calculadora para que puedas simular los intereses que ganas
+                    concretando un plazo fijo. Te recomendamos que hagas varias pruebas de ejemplo.</p>
+                <a href="https://www.tuplazofijo.com.ar/calculadoras/">Calculadora Plazo Fijo</a>
+            </div>
+        </div>
+
+
+        <div class="container-2">
+            <div class="imagen-bonos"></div>
+            <div class="acc-bonos">
+                <h3>Acciones o bonos</h3>
+                <p>Esta sección es super interesante! Quien nunca invirtió en acciones no debe temer, sólo hay que
+                    tener en cuenta algunos detalles que te dejamos a continuación, por supuesto,
+                    podemos consultarnos lo que quieras.
+                    En ambos casos ya sea que vayas a comprar acciones o bonos se necesita un broker. El bróker es una
+                    entidad que organiza las operaciones en los mercados bursátiles entre un comprador y un vendedor. Se
+                    convierte en un intermediario dentro del mercado que cobra una comisión por realizar este servicio.
+                    También aconseja sobre inversiones, y necesita una licencia para realizar este tipo de trabajo.
+                    En Argentina contamos con varios. Vamos a tomar de ejemplo Invertir Online, que es con el que más
+                    nos manejamos. Pero ustedes pueden elegir el que quieran y te podemos asistir con información sobre
+                    cualquier broker.
+                    La forma más sencilla de operar es por la página web del broker.
+                </p>
+            </div>
+        </div>
+
+        <div class="acc-o-bonos">
+            <div class="bonos">
+                <h3>Bonos</h3>
+                <p>Cuando comprás un bono entregás una cantidad de dinero (el capital de la operación) a la entidad
+                    emisora del bono, la cual se compromete a devolver el capital al final del plazo establecido junto a
+                    un tanto por ciento de interés (el beneficio que obtendrás de esta operación).</p> <br>
+            </div>
+
+            <div class="acciones">
+                <h3>Acciones</h3>
+                <p id="acciones">Para poder invertir en la bolsa argentina, es necesario contar con un agente de
+                    negociación y/o
+                    liquidación registrado ante la Comisión Nacional de Valores, quien actuará como nuestro
+                    intermediario. Pero a este requisito, también hay que sumarle los siguientes:
+                    Ser titular de una cuenta, la cual debe ser cuenta corriente.
+                    Contar con DNI y constancia de CUIT o CUIL.
+                    Tener actualizadas las declaraciones juradas de ganancias y bienes personales.
+                    Tener los recibos de sueldos o la constancia de monotributo.</p>
+                <p>¿Qué es una Acción?
+                    Las acciones bursátiles son partes en las que se divide el capital social de una empresa. Estas
+                    partes son adquiridas por una persona, llamada accionista.
+                    Las acciones tienen un valor de compra y otro de venta que podés ir negociando en el tiempo para
+                    generar una ganancia. También podés quedártelas en tu Cuenta de Inversión, de esta forma, si la
+                    empresa paga dividendos, podrás cobrarlos.</p>
+            </div>
+            <p>Proximamente vamos a subir más info para que puedas ir capacitandote y convertirte en el dueño de tus
+                finanzas.</p>
+        </div>
+
+        <div class="container-3">
+            <div class="imagen-mon-ext"></div>
+            <div class="moneda-ext">
+                <h3>Comprar modeda extranjera</h3>                
+                <p>Actualmente en Argentina, tenemos el cepo para la compra de dólares. Entonces podes adquirir 200
+                    dólares mensuales. Aunque también es posible que compres dólares a traves de un broker, ese es el
+                    conocido dolar MEP. Este tipo de compra no tiene límites y el valor varia con una cotización propia.
+                    Utilizamos en nuestro caso el broker invertir online. Proximamente iremos subiendo videos para
+                    explicar la operatoria.
+                    Mientras tanto podes ir empapandote de info en su <a href="https://www.invertironline.com/productos/dolar-mep-simple">Página Directamente.</a> Es
+                    sumamente fácil y ágil realizar la compra y ahorrar en modeda extranjera, y así resguardas tu
+                    dinero.</p>
+                <p>Se obtiene ganancia de esta manera por la variación en la cotización de la moneda extranjera.</p>
+            </div>
+            </div>
+        </div>
     </section>
 
+
     <section id="criptos">
+
         <h2>Criptomonedas</h2>
         <p>Las Criptomonedas merecen un capitulo aparte para nosotros. Por lo novedosas que son y por el potencial que
             tienen. Existen diversas fuentes de información te dejamos info para que comiences a conocerlas.</p>
+
+        <h3>El Bitcoin</h3>
+        <p>El Bitcoin es una moneda digital que funciona en una red que permite las transacciones entre personas, sin
+            el control o intervención de ningún gobierno, banco ni otro tipo de intermediario.</p>
+
+        <h3>La tecnología Blockchain</h3>
+        <p>La tecnología del Blockchain es una nueva forma de organizar información de manera segura. Consiste en una
+            base de datos en donde la información se ordena en bloques sucesivos, conectados entre sí, formando una
+            cadena de bloques.</p>
+
+        <h3>Ethereum, Stablecoins y otras criptos</h3>
+        <p>Ethereum es una red que funciona como una gran computadora digital en línea y descentralizada que ejecuta
+            Smart Contracts y tiene su propia cripto (ETH). Las Stablecoins son un tipo de criptos consideradas más
+            estables, mientras que el término Altcoin refiere a cualquier cripto o token que no sea Bitcoin y Shitcoin
+            es usado para describir de forma despectiva a algunas criptos.</p>
+
+        <h3>Invertir en el mundo cripto</h3>
+        <p>Invertir en activos financieros es comprar con el fin de obtener ganancias. Estas pueden darse mediante el
+            cobro de intereses o por la suba de precio de lo que se compra (que luego se vende por más dinero del que
+            costó). Invertir conlleva riesgos y es por eso que tiene un retorno o rendimiento.
+            Actualmente existen diversos intermediarios que te permiten operar con criptos, uno de ellos es Lemon o
+            Prex. Próximamente vamos a estar compartiendo contenido gratuito, también podes acceder a esta info en 
+            <a href="https://www.prexcard.com.ar/explorando-cripto/home"> la siguiente web.</a></p>
     </section>
 
-    <section id="contacto">
-        <h1>Contactanos por cualquier duda!</h1>
-        <form action="https://formspree.io/f/xvoyqryw" method="POST">
-            <label>
-                Nombre:
-                <input type="text" name="Nombre">
-            </label>
-            <label>
-                Email:
-                <input type="email" name="email">
-            </label>
-            <label>
-                Dejanos tu mensaje:
-                <textarea name="mensaje"></textarea>
-            </label>
+    <section id="contacto">        
+        <h2>Contactanos por cualquier duda!</h2>
+        <div class="formulario">
 
-            <button type="submit">Enviar consulta</button>
-        </form>
-        <br>
+            <form name="validarForm" action="https://formspree.io/f/xvoyqryw" method="POST">
+                <p>Nombre</p> 
+                <input type="text" name="nombre" placeholder="Nombre" size="30" maxlength="100">
+                
+                <p>Edad</p>
+                <input type="text" name="edad" placeholder="Edad" size="3" maxlength="2">
+                
+                <p>Correo Electronico</p>
+                <input type="email" name="email" placeholder="Correo">
+                
+                <p>Mensaje:</p> 
+                <textarea name="mensaje" id="" placeholder="Escriba aquí su consulta"></textarea>
+                
+                <p>Seleccione tipo de consulta</p>
+                <select name="tipoConsulta">
+                    <option value="nada"><Samp>Seleccionar</Samp></option>
+                    <option value="Comercial">Contacto Comercial</option>
+                    <option value="Sugerencia para el blog">Sugerencia para el blog</option>
+                </select>
+            </form>            
+           
+            <input type="button" id="botonForm" value="Enviar" onclick="validarEnviar()">
+           
+        </div>       
 
-        <h1>Redes</h1>
-        <p>Seguinos en nuestras redes sociales para estar al tanto de lo que se viene.</p>
-        <br>
-        <h1>Visitanos!</h1>
-        <p>Te esperamos en nuestras oficinas para conocernos</p>
+        
+        <script>
 
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.1199406417527!2d-68.78914854941512!3d-32.89113359096098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0eea8158bbd1%3A0x2916364b0208b13a!2sGutemberg%203973%2C%20M5521EPF%20Belgrano%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1665454442205!5m2!1ses!2sar"
+            function validarEnviar() {
+
+                //Función para validar el envío de datos del formulario
+                if (document.validarForm.nombre.value.length < 3) {
+                    alert("Escriba su nombre completo por favor")
+                    document.validarForm.nombre.focus()
+                    return 0;
+                }
+                edad = document.validarForm.edad.value
+                edad = validarEntero(edad)
+                document.validarForm.edad.value = edad
+                if (edad == "") {
+                    alert("Introducir edad como número entero")
+                    document.validarForm.edad.focus()
+                    return 0;
+                }
+                if (document.validarForm.tipoConsulta.selectedIndex == 0) {
+                    alert("Debe seleccionar su tipo de consulta por favor")
+                    document.validarForm.tipoConsulta.focus()
+                    return 0;
+                }
+                if (document.validarForm.mensaje.value == "") {
+                    alert("Ingrese su consulta por favor")
+                    document.validarForm.mensaje.focus()
+                    return 0;
+                }
+                //se envía el formulario
+                alert("Muchas gracias por enviar su consulta")
+                document.validarForm.submit();
+            }
+            function validarEntero(valor) {
+                valor = parseInt(valor)
+                if (isNaN(valor)) {
+                    return ""
+                } else {
+                    return valor
+                }
+            }
+
+        </script>
+
+        <div class="redes-sociales">            
+            <h3>Redes</h3>
+            <a href="http://www.facebook.com" target="_blank">
+                <i class="fa-brands fa-facebook"></i> 
+            </a>
+            <a href="http://www.instagram.com" target="_blank">                
+                <i class="fa-brands fa-instagram"></i>
+            </a>            
+            <a href="http://www.twitter.com" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <p>Seguinos en nuestras redes sociales para estar al tanto de lo que se viene.</p>            
+        </div>
+
+        <div class="direccion">
+            <h3>Visitanos!</h3>                       
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.1199406417527!2d-68.78914854941512!3d-32.89113359096098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0eea8158bbd1%3A0x2916364b0208b13a!2sGutemberg%203973%2C%20M5521EPF%20Belgrano%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1665454442205!5m2!1ses!2sar"
             width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+            <p>Te esperamos en nuestras oficinas para conocernos</p> 
+        </div>
 
     </section>
 
