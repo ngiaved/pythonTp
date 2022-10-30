@@ -450,8 +450,7 @@ footer .container {
 
    
 
-    #contacto div{
-        /* width: 100%; */
+    #contacto div{       
         display: inline-block;
     }
 
@@ -494,6 +493,5 @@ footer .container {
     #contacto h3{
         margin: 5px;
     }
-
-    
+        
 }
