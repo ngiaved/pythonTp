@@ -170,6 +170,31 @@ header a {
     align-items: center;
 }
 
+#botonForm{    
+    background-color: rgb(29, 29, 29);
+    border: none;
+    max-width: 190px;
+    letter-spacing: 4px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(241, 232, 232);
+    font-size: 25px;
+    font-weight: bold;
+    overflow: hidden;
+    transition: 0.3s; 
+    
+}
+
+#botonForm:hover {
+    letter-spacing: 4px;
+    background-color: rgb(19, 182, 231);
+    box-shadow: 0 0 10px rgb(19, 182, 231), 0 0 20px rgb(19, 182, 231), 0 0 30px rgb(19, 182, 231);
+    border: none;
+    color: rgb(10, 10, 10);
+    font-size: 25px;
+    overflow: hidden;
+    transition: 0.3s;    
+}
+
 /* CRIPTOMONEDAS */
 
 #criptos{
@@ -492,6 +517,5 @@ footer .container {
 
     #contacto h3{
         margin: 5px;
-    }
-        
+    }    
 }
