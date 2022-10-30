@@ -69,9 +69,9 @@
     </section>
 
     <section id="ahorros">
+        <h2>Ahorros</h2>
         <div class="container">
-            <div class="tiposdeahorros">
-                <h2>Ahorros</h2>
+            <div class="tiposdeahorros">                
                 <p>En esta sección te contamos que existen muchas y variadas formas de ahorrar, aunque lo primero es
                     saber
                     manejar
@@ -221,52 +221,41 @@
             cobro de intereses o por la suba de precio de lo que se compra (que luego se vende por más dinero del que
             costó). Invertir conlleva riesgos y es por eso que tiene un retorno o rendimiento.
             Actualmente existen diversos intermediarios que te permiten operar con criptos, uno de ellos es Lemon o
-            Prex. Próximamente vamos a estar compartiendo contenido gratuito, también podes acceder a esta info en <a
-                href="https://www.prexcard.com.ar/explorando-cripto/home">la siguiente web.</a></p>
+            Prex. Próximamente vamos a estar compartiendo contenido gratuito, también podes acceder a esta info en 
+            <a href="https://www.prexcard.com.ar/explorando-cripto/home"> la siguiente web.</a></p>
     </section>
 
-    <section id="contacto">
+    <section id="contacto">        
         <h2>Contactanos por cualquier duda!</h2>
-        <form name="validarForm" action="https://formspree.io/f/xvoyqryw" method="POST">
-            <table>
-                <tr>
-                    <td>Nombre:</td>
-                    <td><input type="text" name="nombre" size="30" maxlength="100"></td>
-                </tr>
-                <tr>
-                    <td>Edad:</td>
-                    <td><input type="text" name="edad" size="3" maxlength="2"></td>
-                </tr>
-                <tr>
-                    <td>Email:</td>
-                    <td><input type="email" name="email"></td>
-                </tr>
-                <tr>
-                    <td>Mensaje:</td>
-                    <td><textarea name="mensaje"></textarea></td>
-                </tr>
-                <tr>
-                    <td>Tipo de consulta:</td>
-                    <td>
-                        <select name="tipoConsulta">
-                            <option value="nada">Elegir</option>
-                            <option value="Comercial">Contacto Comercial</option>
-                            <option value="Sugerencia para el blog">Sugerencia para el blog</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="button" id="botonForm" value="Enviar" onclick="validarEnviar()">
-                    </td>
-                </tr>
-            </table>
-        </form>
-        <br>
+        <div class="formulario">
+
+            <form name="validarForm" action="https://formspree.io/f/xvoyqryw" method="POST">
+                <p>Nombre</p> 
+                <input type="text" name="nombre" placeholder="Nombre" size="30" maxlength="100">
+                
+                <p>Edad</p>
+                <input type="text" name="edad" placeholder="Edad" size="3" maxlength="2">
+                
+                <p>Correo Electronico</p>
+                <input type="email" name="email" placeholder="Correo">
+                
+                <p>Mensaje:</p> 
+                <textarea name="mensaje" id="" placeholder="Escriba aquí su consulta"></textarea>
+                
+                <p>Seleccione tipo de consulta</p>
+                <select name="tipoConsulta">
+                    <option value="nada"><Samp>Seleccionar</Samp></option>
+                    <option value="Comercial">Contacto Comercial</option>
+                    <option value="Sugerencia para el blog">Sugerencia para el blog</option>
+                </select>
+            </form>
+            <input type="button" id="botonForm" value="Enviar" onclick="validarEnviar()">
+
+        </div>       
+        
         <script>
 
             function validarEnviar() {
-
 
                 //Función para validar el envío de datos del formulario
                 if (document.validarForm.nombre.value.length < 3) {
@@ -307,17 +296,22 @@
 
         </script>
 
+        <div class="redes-sociales">            
+            <h3>Redes</h3>
+            <i class="fa-brands fa-facebook"></i> 
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <p>Seguinos en nuestras redes sociales para estar al tanto de lo que se viene.</p>            
+        </div>
 
-        <h1>Redes</h1>
-        <p>Seguinos en nuestras redes sociales para estar al tanto de lo que se viene.</p>
-        <br>
-        <h1>Visitanos!</h1>
-        <p>Te esperamos en nuestras oficinas para conocernos</p>
-
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.1199406417527!2d-68.78914854941512!3d-32.89113359096098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0eea8158bbd1%3A0x2916364b0208b13a!2sGutemberg%203973%2C%20M5521EPF%20Belgrano%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1665454442205!5m2!1ses!2sar"
+        <div class="direccion">
+            <h3>Visitanos!</h3>                       
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.1199406417527!2d-68.78914854941512!3d-32.89113359096098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0eea8158bbd1%3A0x2916364b0208b13a!2sGutemberg%203973%2C%20M5521EPF%20Belgrano%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1665454442205!5m2!1ses!2sar"
             width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Te esperamos en nuestras oficinas para conocernos</p> 
+        </div>
+
     </section>
 
     <footer>
