@@ -298,6 +298,18 @@ footer .container {
         flex-direction: column;
         justify-content: center;
     }
+    #quienessomos .imagenPresentacion{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }   
+    #quienessomos img{
+        width:25%;
+        height: 25%;
+        
+    }
+   
 
     #ahorros h2{
         margin-top: 15px;
@@ -485,7 +497,20 @@ footer .container {
     }
 
     #criptos p{
-        padding-left: 15px;       
+        padding: 15px;       
+    }
+    #criptos .container{
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    #criptos .item{
+        width: 45%;
+        background-color: rgb(200, 231, 221);
+        border-radius: 25px;
+        margin: 5px 0px 5px 0px;
+        padding: 5px 5px 5px 5px;
     }
 
     #contacto{

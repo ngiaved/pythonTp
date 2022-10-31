@@ -67,6 +67,10 @@
                     te
                     ayudamos a lograrlo!</p>
             </div>
+           
+        </div>
+        <div class="imagenPresentacion">
+            <img src="Imagenes\economia.jpg">
         </div>
     </section>
 
@@ -198,26 +202,30 @@
 
 
     <section id="criptos">
-
+        
         <h2>Criptomonedas</h2>
         <p>Las Criptomonedas merecen un capitulo aparte para nosotros. Por lo novedosas que son y por el potencial que
             tienen. Existen diversas fuentes de información te dejamos info para que comiences a conocerlas.</p>
-
+        <div class="container">
+            <div class="item">
         <h3>El Bitcoin</h3>
         <p>El Bitcoin es una moneda digital que funciona en una red que permite las transacciones entre personas, sin
             el control o intervención de ningún gobierno, banco ni otro tipo de intermediario.</p>
-
+            </div>
+            <div class="item">
         <h3>La tecnología Blockchain</h3>
         <p>La tecnología del Blockchain es una nueva forma de organizar información de manera segura. Consiste en una
             base de datos en donde la información se ordena en bloques sucesivos, conectados entre sí, formando una
             cadena de bloques.</p>
-
+            </div>
+            <div class="item">
         <h3>Ethereum, Stablecoins y otras criptos</h3>
         <p>Ethereum es una red que funciona como una gran computadora digital en línea y descentralizada que ejecuta
             Smart Contracts y tiene su propia cripto (ETH). Las Stablecoins son un tipo de criptos consideradas más
             estables, mientras que el término Altcoin refiere a cualquier cripto o token que no sea Bitcoin y Shitcoin
             es usado para describir de forma despectiva a algunas criptos.</p>
-
+            </div>
+            <div class="item">
         <h3>Invertir en el mundo cripto</h3>
         <p>Invertir en activos financieros es comprar con el fin de obtener ganancias. Estas pueden darse mediante el
             cobro de intereses o por la suba de precio de lo que se compra (que luego se vende por más dinero del que
@@ -225,6 +233,8 @@
             Actualmente existen diversos intermediarios que te permiten operar con criptos, uno de ellos es Lemon o
             Prex. Próximamente vamos a estar compartiendo contenido gratuito, también podes acceder a esta info en 
             <a href="https://www.prexcard.com.ar/explorando-cripto/home"> la siguiente web.</a></p>
+            </div>
+        </div>    
     </section>
 
     <section id="contacto">        
@@ -238,8 +248,8 @@
                 <p>Edad</p>
                 <input type="text" name="edad" placeholder="Edad" size="3" maxlength="2">
                 
-                <p>Correo Electronico</p>
-                <input type="email" name="email" placeholder="Correo">
+                <p>Teléfono</p>
+                <input type="text" name="tel" placeholder="Teléfono" size="10" maxlength="12">
                 
                 <p>Mensaje:</p> 
                 <textarea name="mensaje" id="" placeholder="Escriba aquí su consulta"></textarea>
@@ -257,49 +267,7 @@
         </div>       
 
         
-        <script>
-
-            function validarEnviar() {
-
-                //Función para validar el envío de datos del formulario
-                if (document.validarForm.nombre.value.length < 3) {
-                    alert("Escriba su nombre completo por favor")
-                    document.validarForm.nombre.focus()
-                    return 0;
-                }
-                edad = document.validarForm.edad.value
-                edad = validarEntero(edad)
-                document.validarForm.edad.value = edad
-                if (edad == "") {
-                    alert("Introducir edad como número entero")
-                    document.validarForm.edad.focus()
-                    return 0;
-                }
-                if (document.validarForm.tipoConsulta.selectedIndex == 0) {
-                    alert("Debe seleccionar su tipo de consulta por favor")
-                    document.validarForm.tipoConsulta.focus()
-                    return 0;
-                }
-                if (document.validarForm.mensaje.value == "") {
-                    alert("Ingrese su consulta por favor")
-                    document.validarForm.mensaje.focus()
-                    return 0;
-                }
-                //se envía el formulario
-                alert("Muchas gracias por enviar su consulta")
-                document.validarForm.submit();
-            }
-            function validarEntero(valor) {
-                valor = parseInt(valor)
-                if (isNaN(valor)) {
-                    return ""
-                } else {
-                    return valor
-                }
-            }
-
-        </script>
-
+        
         <div class="redes-sociales">            
             <h3>Redes</h3>
             <a href="http://www.facebook.com" target="_blank">
