@@ -83,6 +83,17 @@ header a {
     text-align: center;
     padding: 0;
 }
+#quienessomos .imagenPresentacion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}   
+#quienessomos img{
+    width: 25%;
+    height: 25%;
+    
+}
 
 /* ESTILO AHORROS */
 
@@ -298,19 +309,7 @@ footer .container {
         flex-direction: column;
         justify-content: center;
     }
-    #quienessomos .imagenPresentacion{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-
-    }   
-    #quienessomos img{
-        width:25%;
-        height: 25%;
-        
-    }
-   
-
+     
     #ahorros h2{
         margin-top: 15px;
         padding-bottom: 50px;
